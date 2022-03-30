@@ -27,7 +27,9 @@ data:
   DB_PASSWORD: {{ .Values.config.db_password }}
   {{- end }}
   DB_DATABASE: {{ default "konga_database" .Values.config.db_database }}
+  {{- if .Values.config.db_pg_schema }}
   DB_PG_SCHEMA: {{ default "public" .Values.config.db_pg_schema }}
+   {{- end }}
   {{- if eq .Values.config.node_env "development" }}
   KONGA_LOG_LEVEL: {{ default "debug" .Values.config.log_level }}
   {{ else if eq .Values.config.node_env "production" }}
