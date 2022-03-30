@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  konga:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-03-30T11:06:25.880968582-03:00"
+    description: A Helm chart for Kubernetes
+    digest: 092760b055fe6486460305474167b60f6355042b18eec2918045d0d19329c7e8
+    name: konga
+    urls:
+    - konga-1.0.1.tgz
+    version: 1.0.1
+generated: "2022-03-30T11:06:25.880449619-03:00"
