@@ -16,6 +16,7 @@ service:
   type: ClusterIP
   port: 80
 
+# env: {}
 
 # Konga default configuration
 config: {}
